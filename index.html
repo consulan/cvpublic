@@ -3,67 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi Página Estática</title>
+  <title>CV Freelance - [Tu Nombre]</title>
   <style>
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
-    body {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
       text-align: center;
     }
 
     main {
-      flex: 1;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
-
-    .container {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 20px auto;
+      padding: 0 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #222;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .contact a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <h1>Encabezado (Layout Superior)</h1>
-    </div>
-  </header>
+<header>
+  <h1>[Tu Nombre o Alias Técnico]</h1>
+  <p>Especialista en Infraestructura, Redes y DevOps</p>
+</header>
 
-  <main>
-    <div class="container">
-      <h2>Contenido Principal (Cuerpo)</h2>
-      <p>Este es el cuerpo de la página. Podés poner texto, imágenes, secciones, lo que quieras.</p>
-    </div>
-  </main>
+<main>
 
-  <footer>
-    <div class="container">
-      <p>Pie de página (Layout Inferior) - &copy; 2025</p>
-    </div>
-  </footer>
+  <section class="section">
+    <h2>Resumen Profesional</h2>
+    <p>Profesional IT con sólida experiencia en infraestructura, redes y automatización. Especializado en DevOps, administración de sistemas Linux, scripting y monitoreo. Disponible para proyectos remotos, consultoría o soporte técnico.</p>
+  </section>
+
+  <section class="section">
+    <h2>Servicios Freelance</h2>
+    <ul>
+      <li>Administración de servidores Linux (RHEL, Debian)</li>
+      <li>Automatización con Ansible y scripts Bash</li>
+      <li>Instalación y configuración de redes VPN, VLAN, DNS, DHCP</li>
+      <li>Implementación de monitoreo con Zabbix, Grafana</li>
+      <li>Virtualización con VMware, KVM, Proxmox</li>
+      <li>Contenedores y DevOps pipelines (Docker, Git, Jenkins)</li>
+      <li>Migraciones a Cloud (AWS, Azure básico)</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Habilidades Técnicas</h2>
+    <ul>
+      <li><strong>Sistemas:</strong> RHEL, CentOS, Debian, Windows Server</li>
+      <li><strong>Virtualización:</strong> VMware, KVM, Proxmox</li>
+      <li><strong>Networking:</strong> Fortinet, Mikrotik, VLANs, VPN, Firewall</li>
+      <li><strong>DevOps:</strong> Ansible, Docker, Jenkins, Git</li>
+      <li><strong>Monitoreo:</strong> Zabbix, Grafana, Prometheus</li>
+      <li><strong>Bases de datos:</strong> PostgreSQL, MySQL</li>
+      <li><strong>Lenguajes:</strong> Bash, Python, SQL, JavaScript (ES6)</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Experiencia / Proyectos</h2>
+    <ul>
+      <li><strong>Migración cloud híbrida:</strong> Jenkins + Ansible + Docker para automatizar despliegues.</li>
+      <li><strong>Optimización de redes LAN:</strong> Configuración de VLANs y VPNs en Fortinet y Mikrotik.</li>
+      <li><strong>Soporte L2/L3:</strong> Troubleshooting de sistemas y redes en entorno RHEL + VMware.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Certificaciones</h2>
+    <ul>
+      <li>Red Hat System Administration I – RH124 (2022)</li>
+      <li>DevOps Foundations – IBM / Coursera (2024)</li>
+      <li>Scrum Master – CertiProf (2023)</li>
+    </ul>
+  </section>
+
+  <section class="section contact">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+    <p>GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>CV Freelance - &copy; 2025</p>
+</footer>
 
 </body>
 </html>
