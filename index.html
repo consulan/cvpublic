@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Página Estática</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Encabezado (Layout Superior)</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Contenido Principal (Cuerpo)</h2>
+      <p>Este es el cuerpo de la página. Podés poner texto, imágenes, secciones, lo que quieras.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Pie de página (Layout Inferior) - &copy; 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>
