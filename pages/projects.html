@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Juan Tomas Ortiz – DevSecOps & Cloud Architect</title>
-  <!-- Bootstrap CSS -->
+  <title>Proyectos – Juan Tomás Ortiz</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/uniform.css">
+  <link rel="stylesheet" href="../styles/uniform.css">
 </head>
 <body>
 
 <header>
   <h1 class="nombre">Juan Tomás Ortiz</h1>
-  <p>🧠 IT Ops Manager | 🏗️ Cloud/Infra Architect | 🧭 Tech Lead | 🧰 IT Consultant | ⚙️ SRE / DevOps Sr | 🌐 Network & Security Specialist | 🤖 Automation Engineer | 🧑‍💻 Fullstack Developer</p>
+  <p>Proyectos Técnicos y Repositorios</p>
 </header>
 
 <!-- Navbar -->
@@ -58,32 +57,32 @@
 
 <!-- Navbar end -->
 
-<!-- Main content -->
-
 <main>
-
-  <section class="tags-section" aria-label="Tags profesionales y áreas de especialización">
-    Inteligencia Artificial aplicada a IT |  Modelos Generativos y AI Ops |  DevSecOps y Seguridad Automatizada |  Infraestructura como Código (IaC) avanzada |  Cloud Native y Serverless |  Observabilidad y Monitoreo |  Sostenibilidad TI y Eficiencia Energética |  Automatización con Python y Low-Code |  Metodologías Ágiles y Liderazgo IT
+  <section class="tags-section">
+    🧠 Diseño de redes | 🐳 Dockerización | 🔐 Seguridad de red | 🛠️ Implementaciones físicas | 💻 Desarrollos DevOps | 🧾 Documentación técnica
   </section>
 
   <section class="section">
-    <h2>📌Resumen Destacado</h2>
+    <h2>📁 Repositorios Técnicos</h2>
     <ul>
-      <li>Especialista en automatización de infraestructuras y DevSecOps.</li>
-      <li>Amplia experiencia con OpenStack, Kubernetes, RHEL, Terraform, Ansible.</li>
-      <li>Enfoque en seguridad, redes y despliegues reproducibles (IaC).</li>
-      <li>Desarrollo de pipelines CI/CD, contenedores y microservicios.</li>
-      <li>En formación continua: Ingeniería en Sistemas + certificaciones AWS, Azure, CCNA.</li>
-      <li>Más de 10 años trabajando de forma 100% remota con equipos distribuidos globalmente.</li>
+      <li><a href="https://github.com/consulan/devops-toolkit-portfolio" target="_blank">DevOps Toolkit Portfolio</a></li>
+      <li><a href="https://github.com/consulan/ia-deploy-devops" target="_blank">IA Deploy DevOps</a></li>
+      <li><a href="https://github.com/consulan/design-uml-software" target="_blank">Design UML Software</a></li>
     </ul>
   </section>
 
   <section class="section">
-    <h2>💼Presentación Profesional</h2>
-    <p>Profesional con más de 20 años de trayectoria en IT, especializado en automatización de infraestructura, operaciones y plataformas. En la última década me desempeñé en roles de DevOps, SRE y consultoría técnica para entornos críticos y de alta disponibilidad, tanto en el sector público como privado. Trabajo en forma 100% remota desde hace más de 10 años, colaborando con equipos multidisciplinarios en distintas zonas horarias.</p>
-    <p>Tengo experiencia en administración de sistemas Linux (RHEL), virtualización (KVM, VMware), cloud privada (OpenStack), contenedores (Docker), orquestadores (Kubernetes/OpenShift), CI/CD (GitLab, Jenkins) e infraestructura como código (Ansible, Terraform). Fuerte enfoque en seguridad, redes, scripting (Bash, Python), y cultura DevSecOps con liderazgo técnico y metodologías ágiles.</p>
+    <h2>📌 Proyectos de Implementación</h2>
+    <ul>
+      <li><strong>Diseño de red LAN – MMG Group (Perú)</strong><br>Diseño de solución LAN para un piso completo del edificio corporativo.</li>
+      <li><strong>Dockerización de aplicaciones – Ministerio de Producción</strong><br>- Contenerización de aplicaciones <br>- CI/CD automatizado con Google Cloud y Ansible</li>
+      <li><strong>Desarrollo Full Stack – Ministerio de Producción</strong><br>Angular, Python, Laravel, REST APIs, optimización MySQL</li>
+      <li><strong>Implementación 802.1x – Cliente con Cisco + AD DS</strong><br>Roles y validación de red cableada y WiFi con RADIUS</li>
+      <li><strong>Site Survey Fortinet Wireless – Cliente AUSA</strong><br>Evaluación técnica para mejoras de cobertura y calidad WiFi</li>
+      <li><strong>Implementación Cisco 4507 – Core Switching</strong><br>Mejoras en rendimiento de red y disminución de latencia</li>
+      <li><strong>Implementación Cisco Nexus 7710/5548/2248</strong><br>Core y distribución renovada con impacto positivo en VoIP y servicios críticos</li>
+    </ul>
   </section>
-
 </main>
 
 <!-- Footer -->
@@ -98,60 +97,12 @@
 </footer>
 
 <!-- Cajas laterales -->
-<!-- Experiencia por Áreas -->
 <div class="position-absolute top-50 end-0 translate-middle-y d-none d-md-block" style="margin-left: 20px;">
-  <div class="bg-light rounded shadow p-3" style="width: 400px;">
-    <p class="mb-1 text-center fw-bold">Experiencia por Áreas (años)</p>
-    <canvas id="experienceChart" style="width: 400px; height: 400px;"></canvas>
+  <div class="bg-light rounded shadow p-3" style="width: 200px;">
+    <p class="mb-1">👋 ¡Hola!</p>
+    <p class="mb-0">Gracias por visitar mi CV.</p>
   </div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
-
-<script>
-  const ctx = document.getElementById('experienceChart').getContext('2d');
-  const experienceChart = new Chart(ctx, {
-    type: 'pie',
-    data: {
-      labels: ['DevOps', 'Networking IT', 'Infraestructura', 'Desarrollo', 'Seguridad', 'Análisis de Sistemas'],
-      datasets: [{
-        data: [10, 13, 15, 3, 7, 5],
-        backgroundColor: [
-          '#4dc9f6',
-          '#f67019',
-          '#f53794',
-          '#537bc4',
-          '#acc236',
-          '#166a8f'
-        ],
-        borderColor: '#fff',
-        borderWidth: 2
-      }]
-    },
-    options: {
-      plugins: {
-        legend: {
-          position: 'bottom',
-          labels: {font: {size: 12}}
-        },
-        datalabels: {
-          color: '#fff',
-          font: {
-            weight: 'bold',
-            size: 14
-          },
-          formatter: function(value, context) {
-            return value;  // Mostrar solo el número de años
-          }
-        }
-      }
-    },
-    plugins: [ChartDataLabels]
-  });
-</script>
-
-<!-- Contacto -->
 
 <div class="position-absolute top-50 start-0 translate-middle-y d-none d-md-block" style="margin-right: 20px;">
   <div class="bg-light rounded shadow p-3 text-start" style="width: 250px;">
@@ -162,10 +113,6 @@
   </div>
 </div>
 
-
-</body>
-
-
-<!-- Bootstrap JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
